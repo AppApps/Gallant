@@ -13,7 +13,9 @@ import android.graphics.drawable.LayerDrawable;
 import android.support.annotation.NonNull;
 import android.util.AttributeSet;
 import android.util.TypedValue;
+import android.view.LayoutInflater;
 import android.view.MotionEvent;
+import android.view.View;
 import android.widget.RelativeLayout;
 
 import java.util.LinkedHashMap;
@@ -60,6 +62,15 @@ public abstract class Button extends RelativeLayout {
             radius = getHeight() / rippleSize;
             x = event.getX();
             y = event.getY();
+
+//            View mTabStrip = SlidingTabStrip.;
+//            tabView = LayoutInflater.from(getContext()).inflate(R.layout.page, SlidingTabStrip,
+//                    false);
+//            mTabStrip.addView(tabView);
+//            if (i == mViewPager.getCurrentItem()) {
+//                tabView.setSelected(true);
+//            }
+//
         } else if (event.getAction() == MotionEvent.ACTION_MOVE) {
             radius = getHeight() / rippleSize;
             x = event.getX();

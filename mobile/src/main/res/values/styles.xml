@@ -14,4 +14,5 @@
         <item name="spinBars">true</item>
         <item name="color">@color/grey_1000w</item>
     </style>
+
 </resources>
