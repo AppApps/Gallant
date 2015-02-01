@@ -7,7 +7,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
 
-    final int PAGE_COUNT =8;
+    final int PAGE_COUNT =10;
     private String titles[] ;
 
     public ViewPagerAdapter(FragmentManager fm, String[] titles2) {
@@ -17,6 +17,12 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
+        switch (position) {
+            case 0:
+                return Buildings.newInstance(position);
+            case 1:
+                return Weapons.newInstance(position);
+        }
         return SampleFragment.newInstance(position);
     }
 

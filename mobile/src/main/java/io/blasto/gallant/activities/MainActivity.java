@@ -1,4 +1,4 @@
-package io.blasto.gallant;
+package io.blasto.gallant.activities;
 
 import android.content.res.Configuration;
 import android.graphics.Color;
@@ -14,9 +14,17 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.ViewAnimator;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
+
+import io.blasto.gallant.FloatingActionButton;
+import io.blasto.gallant.GlobalHelper;
+import io.blasto.gallant.ProgressBarCircular;
+import io.blasto.gallant.R;
+import io.blasto.gallant.ViewPagerAdapter;
+import io.blasto.gallant.view.SlidingTabLayout;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -26,7 +34,7 @@ public class MainActivity extends ActionBarActivity {
     private ActionBarDrawerToggle drawerToggle;
 
     ViewPager pager;
-    private String titles[] = new String[]{"Sample Tab 1", "Sample Tab 2", "Sample Tab 3", "Sample Tab 4"
+    private String titles[] = new String[]{"Buildings", "Weapons", "Sample Tab 1", "Sample Tab 2", "Sample Tab 3", "Sample Tab 4"
             , "Sample Tab 5", "Sample Tab 6", "Sample Tab 7", "Sample Tab 8"};
     private Toolbar toolbar;
 
@@ -35,10 +43,11 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_sample);
         setContentView(R.layout.activity_sample);
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ListView mDrawerList = (ListView) findViewById(R.id.navdrawer);
+        final ListView mDrawerList = (ListView) findViewById(R.id.navdrawer);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         if (toolbar != null) {
             setSupportActionBar(toolbar);
@@ -57,6 +66,7 @@ public class MainActivity extends ActionBarActivity {
         });
         drawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, R.string.app_name, R.string.app_name);
         mDrawerLayout.setDrawerListener(drawerToggle);
+
         String[] values = new String[]{
                 "RED", "PINK", "PURPLE", "DEEP PURPLE", "INDIGO", "BLUE", "LIGHT BLUE", "CYAN", "TEAL", "GREEN", "LIGHT GREEN", "LIME", "YELLOW", "AMBER", "ORANGE", "DEEP ORANGE", "BROWN", "GREY", "BLUE GREY"
         };
@@ -101,15 +111,19 @@ public class MainActivity extends ActionBarActivity {
 
                 globalBackgroundColor.setGlobalDynamicColor(getResources().getColor(colorMap.get(position)));
 
+
                 toolbar.setBackgroundColor(globalBackgroundColor.getGlobalDynamicColor());
-                slidingTabLayout.setBackgroundColor(globalBackgroundColor.getGlobalDynamicColor());
                 ProgressBarCircular progressBarCircular = (ProgressBarCircular) findViewById(R.id.progress);
                 FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fabButton);
                 fab.setBackgroundColor(globalBackgroundColor.getGlobalDynamicColor());
                 progressBarCircular.setBackgroundColor(globalBackgroundColor.getGlobalDynamicColor());
+
                 mDrawerLayout.closeDrawer(Gravity.START);
+
             }
         });
+
+
     }
 
     @Override

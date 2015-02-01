@@ -6,6 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import io.blasto.gallant.activities.MainActivity;
+
 public class SampleFragment extends Fragment {
     private static final String ARG_POSITION = "position";
 

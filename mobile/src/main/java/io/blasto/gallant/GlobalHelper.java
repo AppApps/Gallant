@@ -6,7 +6,7 @@ import android.graphics.Color;
  * Created by Blasto on 12/17/2014.
  */
 public class GlobalHelper {
-    private int globalDynamicColor = Color.parseColor("#00BCD4");
+    private int globalDynamicColor = Color.parseColor("#009688");
 
     public int getGlobalDynamicColor() {
         return globalDynamicColor;

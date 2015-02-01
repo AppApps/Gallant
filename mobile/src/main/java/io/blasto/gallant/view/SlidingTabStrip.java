@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package io.blasto.gallant;
+package io.blasto.gallant.view;
 
 import android.content.Context;
 import android.graphics.Canvas;

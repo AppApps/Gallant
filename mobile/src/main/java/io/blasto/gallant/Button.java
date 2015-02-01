@@ -13,13 +13,13 @@ import android.graphics.drawable.LayerDrawable;
 import android.support.annotation.NonNull;
 import android.util.AttributeSet;
 import android.util.TypedValue;
-import android.view.LayoutInflater;
 import android.view.MotionEvent;
-import android.view.View;
 import android.widget.RelativeLayout;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
+
+import io.blasto.gallant.activities.MainActivity;
 
 public abstract class Button extends RelativeLayout {
 

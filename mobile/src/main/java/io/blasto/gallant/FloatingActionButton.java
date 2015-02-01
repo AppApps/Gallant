@@ -15,6 +15,8 @@ import android.util.TypedValue;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
+import io.blasto.gallant.activities.MainActivity;
+
 
 public class FloatingActionButton extends Button {
     int sizeIcon = 24;

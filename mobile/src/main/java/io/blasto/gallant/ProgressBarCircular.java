@@ -16,6 +16,8 @@ import android.widget.RelativeLayout;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+import io.blasto.gallant.activities.MainActivity;
+
 public class ProgressBarCircular extends RelativeLayout {
 
 

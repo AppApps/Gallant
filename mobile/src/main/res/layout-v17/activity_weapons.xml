@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/weapons"
+    android:layout_width="fill_parent"
+    android:background="@color/green_500"
+    android:layout_height="fill_parent">
+
+    <!--<io.blasto.gallant.FloatingActionButton-->
+        <!--android:id="@+id/fabButton"-->
+        <!--android:layout_width="56dp"-->
+        <!--android:layout_height="56dp"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:layout_margin="16dp"-->
+        <!--android:textSize="24sp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:layout_marginEnd="20dp"-->
+        <!--android:layout_marginBottom="25dp" />-->
+
+    <!--<ListView xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/list"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/grey_900"-->
+        <!--android:textAppearance="?android:attr/textAppearanceListItemSmall"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:paddingStart="?android:attr/listPreferredItemPaddingStart"-->
+        <!--android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"-->
+        <!--android:minHeight="?android:attr/listPreferredItemHeightSmall" >-->
+    <!--</ListView>-->
+
+    <TextView
+        android:id="@+id/weapons_test"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="start"
+        android:background="@color/grey"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/white"
+        android:dividerHeight="0dp"
+        android:drawSelectorOnTop="false"
+        android:text="@string/weapons" />
+
+
+</RelativeLayout>
